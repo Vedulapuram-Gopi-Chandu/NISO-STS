@@ -1,0 +1,473 @@
+          * { box-sizing: border-box; }
+          body { 
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.6; 
+            padding: 20px; 
+            max-width: 1400px; 
+            margin: 0 auto; 
+            background: #fff; 
+            color: #333;
+             }
+          
+          .document-meta { 
+            background: #f8f9fa; 
+            border: 1px solid #dee2e6; 
+            padding: 25px; 
+            margin-bottom: 30px; 
+            border-radius: 8px; 
+          }
+
+          .title-wrap { 
+            margin-bottom: 25px; 
+            }
+          .intro { 
+            color: #6c757d; 
+            font-size: 0.95em; 
+            margin: 0 0 8px; 
+            font-style: italic; 
+            }
+
+          .main-title { 
+            color: #1a1a1a; 
+            font-size: 1.8em; 
+            margin: 10px 0 15px; 
+            border-bottom: 3px solid #007bff; 
+            padding-bottom: 10px;
+             }
+
+          .full-title {
+              color: #495057; 
+              font-size: 1.1em; 
+              margin: 15px 0; 
+              line-height: 1.5;
+               }
+
+          .std-meta-items { 
+            display: flex; 
+            flex-direction: column; 
+            gap: 10px;
+             }
+          /* UPDATED: Added .page-count and .secretariat to this rule for consistent styling */
+          .std-ident, .std-org, .std-ref-line, .release-date, .comm-ref, .ics, .isbn, .proj-id, .release-version, .custom-meta, .content-language, .self-uri, .doc-type, .doc-number, .part-number, .edition-version, .page-count, .secretariat { margin: 5px 0; font-size: 0.95em; }
+          /* UPDATED: Added strong tags within .page-count and .secretariat to make their labels blue */
+          .std-ident strong, .std-org strong, .std-ref-line strong, .release-date strong, .comm-ref strong, .ics strong, .isbn strong, .proj-id strong, .release-version strong, .custom-meta strong, .content-language strong, .self-uri strong, .doc-type strong, .doc-number strong, .part-number strong, .edition-version strong, .page-count strong, .secretariat strong { color: #007bff; }
+          .std-ref-line 
+          { 
+            color: #000;
+           }
+          
+          .abstract { 
+            background: #e7f3ff; 
+            border-left: 4px solid #007bff; 
+            padding: 20px; 
+            margin: 20px 0; 
+            border-radius: 4px; 
+            }
+
+          .abstract h3 { 
+            margin-top: 0; 
+            color: #0056b3; 
+            }
+          
+          h1 { 
+            color: #1a1a1a; 
+            font-size: 2em; 
+            border-bottom: 3px solid #007bff; 
+            padding-bottom: 10px; 
+            margin: 30px 0 20px; 
+            }
+
+          h2 { 
+            color: #2c3e50; 
+            font-size: 1.6em; 
+            border-bottom: 2px solid #6c757d; 
+            padding-bottom: 8px; 
+            margin: 25px 0 15px; 
+            }
+
+          h3 { 
+            color: #495057; 
+            font-size: 1.3em; 
+            margin: 20px 0 12px; 
+            }
+
+          h4 { 
+            color: #495057; 
+            font-size: 1.1em; 
+            margin: 18px 0 10px; 
+            }
+            
+          h5 { 
+            color: #292c2dff; 
+            font-size: 1em; 
+            margin: 15px 0 8px; 
+            font-weight: 600; 
+            }
+
+          h6 { 
+            color: #282626ff; 
+            font-size: 0.95em; 
+            margin: 12px 0 6px; 
+            font-weight: 600; 
+            letter-spacing: 0.3px; 
+            }
+
+          .label { 
+            font-weight: bold; 
+            color: #495057; 
+            margin-right: 8px;
+             }
+
+          p { 
+            margin: 12px 0; 
+            text-align: justify; 
+            }
+          
+          ul, ol { 
+            margin: 12px 0;
+             padding-left: 35px;
+              }
+
+          li { 
+            margin: 8px 0;
+             }
+
+          .list-item { 
+            margin: 8px 0; 
+            }
+          
+          .table-wrap { 
+            margin: 25px 0;
+            overflow-x: auto; 
+            }
+
+          .table-wrap caption { 
+            display: none; 
+            }
+
+          .table-caption { 
+            font-weight: bold; 
+            margin: 10px 0 15px; 
+            color: #495057; 
+            font-size: 0.95em; 
+            display: block; 
+            }
+
+          .table-title-heading {
+            background-color: #f1f4f6;
+            color: #2c3e50;
+            padding: 10px 14px;
+            margin: 0 0 15px 0;
+            border-radius: 3px;
+            display: block;
+            width: auto;
+            font-size: 1.05em;
+            font-weight: 700;
+            border: 1px solid #e3e8ec;
+          }
+
+          table { 
+            border-collapse: collapse; 
+            width: 100%; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1); 
+            }
+
+          th, td { 
+            border: 1px solid #dee2e6; 
+            padding: 12px; 
+            text-align: left; 
+            vertical-align: top; 
+            }
+
+          th { 
+            background: #f8f9fa; 
+            font-weight: bold; 
+            color: #495057; 
+            }
+
+          thead th { 
+            background: #e9ecef; 
+            }
+
+          tbody tr:nth-child(even) {
+             background: #f8f9fa; 
+             }
+
+          tbody tr:hover { 
+            background: #e7f3ff; 
+            }
+
+          tbody tr td:empty::before { 
+            content: "—"; 
+            color: #ccc; 
+            font-style: italic; 
+            }
+          
+          .fig, figure { 
+            margin: 25px 0; 
+            padding: 15px; 
+            border: 1px solid #dee2e6; 
+            border-radius: 6px; 
+            background: #fafafa; 
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+             }
+
+          .fig-caption, figcaption { 
+            font-weight: bold; 
+            margin: 12px 0; 
+            color: #495057; 
+            text-align: left; 
+            font-size: 0.95em; 
+            }
+
+          .fig-legend { 
+            margin-top: 15px;
+            padding: 10px;
+            background: #f9f9f9; 
+            border-radius: 4px; 
+            text-align: left; 
+            }
+          
+          img { 
+            max-width: 300px;
+            width: auto;
+            height: auto; 
+            display: block; 
+            margin: 10px auto; 
+            border-radius: 4px; 
+          }
+          
+          .term-sec { 
+            background: #fffef6; 
+            padding: 20px; 
+            border: 1px solid #f0e68c; 
+            margin: 20px 0; 
+            border-radius: 6px; 
+            }
+
+          .term-label {
+             color: #495057; 
+             font-size: 1.1em; 
+             margin: 0 0 15px; 
+             padding: 0; 
+             border: none; 
+             }
+
+          .tbx-term-entry {
+             margin: 20px 0; 
+             padding: 15px; 
+             background: #fff; 
+             border-left: 4px solid #ffc107; 
+             border-radius: 4px; 
+             }
+
+          .tbx-langset { 
+            display: flex; 
+            flex-direction: column;
+            gap: 12px;
+            }
+
+          .tbx-definition { 
+            color: #333; 
+            font-size: 0.95em;
+            margin: 0; 
+            line-height: 1.5; 
+            padding: 10px; 
+            background: #f9f9f9; 
+            border-radius: 3px; 
+             }
+
+          .tbx-tig { 
+            margin: 10px 0 0 0; 
+            }
+
+          .tbx-term {
+             margin: 0; 
+             }
+
+          .tbx-term strong {
+            display: inline;
+            background: transparent;
+            color: #2c3e50;
+            padding: 0;
+            border-radius: 0;
+            font-size: 0.95em;
+            border: none;
+            box-shadow: none;
+            font-weight: 700;
+          }
+
+          .tbx-source { 
+            margin-top: 8px; 
+            padding-top: 8px; 
+            border-top: 1px dotted #ddd; 
+            font-size: 0.9em; 
+            }
+          
+          .non-normative-note, .note, .non-normative-example, .example { 
+            background: #fff9e6; 
+            border-left: 4px solid #ffc107; 
+            padding: 12px; 
+            margin: 15px 0; 
+            border-radius: 4px;
+             }
+
+          .note::before { 
+            content: "Note: "; 
+            font-weight: bold; 
+            }
+
+          .warning { background: #ffe6e6; 
+          border-left: 4px solid #dc3545; 
+          padding: 12px;
+          margin: 15px 0; 
+          }
+          
+          .ref-list { 
+            margin-top: 40px; 
+            padding-top: 20px; 
+            border-top: 2px solid #dee2e6; 
+            }
+
+          .ref { 
+            margin: 15px 0; 
+            padding: 12px 15px; 
+            border-left: 3px solid #6c757d; 
+            background: #f8f9fa;
+            line-height: 1.8;
+          }
+
+          .ref .label {
+            display: inline-block;
+            min-width: 40px;
+            font-weight: bold;
+            color: #495057;
+          }
+
+          .citation { 
+            display: inline; 
+            line-height: 1.8;
+          }
+
+          .citation em {
+            font-style: italic;
+          }
+
+          .citation strong {
+            font-weight: 600;
+          }
+
+          .kwd-group { 
+            margin: 20px 0; 
+            padding: 12px; 
+            background: #f8f9fa; 
+            border: 1px solid #dee2e6; 
+            border-radius: 4px; 
+            }
+
+          .kwd { 
+            display: inline-block; 
+            background: #e9ecef; 
+            padding: 4px 10px; 
+            margin: 4px; 
+            border-radius: 3px; 
+            font-size: 0.9em; 
+            }
+          
+          .permissions {
+            border: 1px solid #dee2e6;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #6c757d;
+            border-radius: 6px;
+          }
+
+          .permissions p {
+             margin: 0 0 10px 0; 
+             padding: 0; 
+             text-align: left; 
+          }
+          
+          .sec { 
+            margin: 25px 0; 
+            }
+
+          .body {
+             margin: 20px 0;
+              }
+
+          .back {
+              margin-top: 40px;
+              padding-top: 20px; 
+              border-top: 2px solid #dee2e6; 
+              }
+          
+          .app, .annex { 
+            margin: 30px 0; 
+            padding: 20px; 
+            background: #f8f9fa; 
+            border: 1px solid #dee2e6; 
+            border-radius: 8px; 
+            }
+
+          .annex-title {
+             color: #2c3e50; 
+             font-size: 1.6em;
+             border-bottom: 2px solid #6c757d;
+             padding-bottom: 8px;
+             margin: 25px 0 15px; 
+             }
+
+          .annex-type { 
+            font-style: italic;
+            color: #6c757d;
+            margin: 5px 0 15px; 
+            }
+          
+          .statement { 
+            margin: 15px 0; 
+            padding: 12px; 
+            background: #e7f3ff; 
+            border-left: 3px solid #007bff; 
+            }
+
+          .boxed-text { 
+            border: 2px solid #007bff; 
+            padding: 15px; 
+            margin: 20px 0; 
+            border-radius: 6px; 
+            background: #f8f9fa; 
+            }
+          
+          dl.def-list {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 5px 10px;
+            margin: 15px 0;
+            align-items: baseline;
+          }
+          
+          dt.def-term {
+            grid-column: 1;
+            font-weight: bold;
+            color: #495057;
+          }
+          
+          dd.def {
+            grid-column: 2;
+            margin: 0;
+            color: #333;
+          }
+          
+          .adoption-meta { 
+            display: none; 
+            }
+          
+          @media print {
+            .page-break { page-break-after: always; }
+            a { color: #000; text-decoration: none; }
+          }

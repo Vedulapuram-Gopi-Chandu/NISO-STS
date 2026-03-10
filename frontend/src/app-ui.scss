@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  background: #f5f6f8;
+  color: #1f2933;
+}
+
+.app-shell {
+  max-width: 880px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+h1,
+h2 {
+  margin-top: 0;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 0.45rem;
+}
+
+h1 {
+  color: #1b2a41;
+  font-size: 1.4rem;
+}
+
+h2 {
+  color: #2d3748;
+  font-size: 1.2rem;
+}
+
+input[type="file"] {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px dashed #007bff;
+  border-radius: 8px;
+  background: #f8f9fa;
+  margin: 1rem 0;
+}
+
+button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: #0056b3;
+}
+
+button:disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
+.error-message {
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border-radius: 6px;
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.empty-state {
+  color: #4a5568;
+  margin: 0;
+}
+
+.conversion-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.conversion-list li {
+  background: #f8f9fa;
+  border-left: 4px solid #17a2b8;
+  border-radius: 6px;
+  margin: 0.6rem 0;
+  padding: 0.75rem;
+}
+
+.conversion-list a {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.conversion-list a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .app-shell {
+    margin: 1rem auto;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+}
